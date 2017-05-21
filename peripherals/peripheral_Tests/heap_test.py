@@ -1,4 +1,4 @@
-from heap import heap
+from ..heap import heap
 from random import randint
 
 #tests heap pop
