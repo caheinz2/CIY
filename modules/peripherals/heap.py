@@ -4,7 +4,7 @@ class heap:
 
     #creates a new heap by sorting an array
     def heapify(self, array):
-        self.data = array
+        self.data = list(array)
         self.data.sort(reverse = True)
         self.data.insert(0, -1) #actual heap data starts at index 1.
    

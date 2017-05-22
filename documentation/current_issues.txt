@@ -1,0 +1,3 @@
+1) in heap.py, constructing a heap out of a list and then operating on the heap changes the list.
+    -fixed 5/22/17
+
