@@ -7,7 +7,7 @@ class heap:
         self.data = list(array)
         self.data.sort(reverse = True)
         self.data.insert(0, -1) #actual heap data starts at index 1.
-   
+
     #pops the maximum value off the heap
     def pop(self):
         retVal = self.data[1]
@@ -20,7 +20,7 @@ class heap:
     def push(self, value):
         self.data.append(value)
         self.heapifyUp(len(self.data) - 1)
-        
+
 
     #returns if the heap has data in it or not
     def isEmpty(self):
@@ -28,7 +28,7 @@ class heap:
             return False
         return True
 
-    
+
 
     #helper functions
 
@@ -51,13 +51,13 @@ class heap:
                 else:
                     self.swap(position, left)
                     self.heapifyDown(left)
-        
+
         elif self.numChildren(position) == 1:
             if self.data[self.leftChild(position)] > self.data[position]:
                 self.swap(position, self.leftChild(position))
                 self.heapifyDown(self.leftChild(position))
-        
-                
+
+
     #swaps the data at two indices
     def swap(self, index1, index2):
         temp = self.data[index1]
@@ -85,5 +85,3 @@ class heap:
         if self.leftChild(index) < length:
             retVal += 1
         return retVal
-
-      
