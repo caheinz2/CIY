@@ -1,0 +1,3 @@
+openpyxl
+python 3
+pytest (for testing...not final application)
