@@ -1,6 +1,6 @@
 import openpyxl
-import churches
-import buildings
+import modules.peripherals.churches as churches
+import modules.peripherals.buildings as buildings
 
 #reads data from a .xlsx file in the correct format and returns a list of churches
 def input(filename):
