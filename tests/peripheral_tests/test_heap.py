@@ -30,5 +30,3 @@ def test_push():
     for element in d:
         b.push(element)
         assert max(b.data) == b.data[1]
-
-

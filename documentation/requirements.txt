@@ -1,3 +1,9 @@
-openpyxl
-python 3
-pytest (for testing...not final application)
+Python Packages:
+  openpyxl
+  python 3
+  pytest (for testing...not final application)
+
+Input:
+  Must match the .xlsx template provided.
+  Female adults column must be filled out.
+  Room 1 columns must be filled out.
