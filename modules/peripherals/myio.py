@@ -1,6 +1,8 @@
 import openpyxl
-import churches
-import buildings
+#import churches
+#import buildings
+import peripherals.churches as churches
+import peripherals.buildings as buildings
 
 #reads data from a .xlsx file in the correct format and returns a list of churches
 def input(filename):
@@ -35,7 +37,7 @@ def isValidChurch(input):
 
 #returns true if building is valid
 def isValidBuilding(input):
-    if type(input[1].value) == int: #assume that if room 1 capacity is an int then building is valid
+    if type(input[2].value) == int: #assume that if floor 1 rooms is an int then building is valid
         return True
     else:
         return False

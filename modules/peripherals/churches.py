@@ -5,7 +5,7 @@ class church:
         self.name = info[0].value
         self.city = info[1].value
         self.state = info[2].value
-        self.zipcode = info[3].value
+        self.zipcode = str(info[3].value)
         self.female_adults = info[4].value
         self.female_students = info[5].value
         self.female_children = info[6].value
@@ -31,16 +31,28 @@ class church:
 
     #call these functions to get important data.
     def getFemales(self):
-        return self.female_adults + self.female_students + self.female_children
+        return self.female_adults + self.female_students #+ self.female_children
 
     def getMales(self):
-        return self.male_adults + self.male_students + self.male_children
+        return self.male_adults + self.male_students #+ self.male_children
 
     def getAdults(self):
         return self.female_adults + self.male_adults
 
+    def getMaleAdults(self):
+        return self.male_adults
+
+    def getFemaleAdults(self):
+        return self.female_adults
+
     def getStudents(self):
         return self.female_students + self.male_students
+
+    def getMaleStudents(self):
+        return self.male_students
+
+    def getFemaleStudents(self):
+        return self.female_students
 
     def getChildren(self):
         return self.female_children + self.male_children

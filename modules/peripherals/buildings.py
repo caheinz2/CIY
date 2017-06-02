@@ -1,51 +1,70 @@
 class building:
+
+    class floor:
+        def __init__(self, rooms, capacity):
+            self.rooms = rooms
+            self.capacity = capacity
+
+        def getCapacity(self):
+            return self.capacity
+
+        def getRooms(self):
+            return self.rooms
+
+
+
     def __init__(self, info):
         self.name = info[0].value
-        self.room1 = (info[1].value, info[2].value)
-        self.room2 = (info[3].value, info[4].value)
-        self.room3 = (info[5].value, info[6].value)
-        self.room4 = (info[7].value, info[8].value)
-        self.gender = info[9].value
+        self.gender = info[1].value
+        self.floors = []
 
-        if type(self.room2[0]) != int:
-            self.room2 = (0,0)
-        if type(self.room3[0]) != int:
-            self.room3 = (0,0)
-        if type(self.room4[0]) != int:
-            self.room4 = (0,0)
+        x = len(info)
+        i = 2
+        while i < x:
+            if type(info[i].value) == int:
+                self.floors.append(building.floor(info[i].value, info[i+1].value))
+                i += 2
+            else:
+                break
 
 
     def __str__(self):
         print(self.name)
-        print("    Room 1 Quantity: {} Capacity: {}".format(self.room1[0], self.room1[1]))
-        print("    Room 2 Quantity: {} Capacity: {}".format(self.room2[0], self.room2[1]))
-        print("    Room 3 Quantity: {} Capacity: {}".format(self.room3[0], self.room3[1]))
-        print("    Room 4 Quantity: {} Capacity: {}".format(self.room4[0], self.room4[1]))
+        print("    Number of Floors: {}".format(self.getNumFloors()))
+        print("    Total Capacity: {} ".format(self.getTotalCap()))
         print("    Gender: {}".format(self.gender))
         return "\n"
 
     #call these functions to get important data
+    def getNumFloors(self):
+        retVal = 0
+        for floor in self.floors:
+            retVal += 1
+        return retVal
 
-    def getRoom1Total(self):
-        return self.room1[0] * self.room1[1]
+    def getFloor(self, floor):
+        return self.floors(floor - 1)
 
-    def getRoom2Total(self):
-        return self.room2[0] * self.room2[1]
+    def getTotalCap(self):
+        retVal = 0
+        for floor in self.floors:
+            retVal += floor.getCapacity()
+        return retVal
 
-    def getRoom3Total(self):
-        return self.room3[0] * self.room3[1]
+    def getTotalRooms(self):
+        retVal = 0
+        for floor in self.floors:
+            retVal += floor.getRooms()
+        return retVal
 
-    def getRoom4Total(self):
-        return self.room4[0] * self.room4[1]
-
-    def getTotal(self):
-        return self.getRoom1Total() + self.getRoom2Total() + self.getRoom3Total() + self.getRoom4Total()
+    def getGender(self):
+        return self.gender
 
     #helper functions
 
     #comparison overloads
     def __lt__(self, other):
-        return self.getTotal() < other.getTotal()
+        return self.getTotalCap() < other.getTotalCap()
 
     def __gt__(self, other):
         return self.getTotal() > other.getTotal()
