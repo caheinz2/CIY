@@ -1,8 +1,8 @@
 import openpyxl
-#import churches
-#import buildings
-import peripherals.churches as churches
-import peripherals.buildings as buildings
+import churches
+import buildings
+#import peripherals.churches as churches
+#import peripherals.buildings as buildings
 
 #reads data from a .xlsx file in the correct format and returns a list of churches
 def input(filename):
@@ -19,9 +19,14 @@ def input(filename):
     buildingList = []
 
     worksheet = workbook['Buildings']
+    x = 1
     for row in worksheet:
+        x += 1
         if isValidBuilding(row):
             curBuilding = buildings.building(row)
+            num_floors = row[2].value
+            for i in range(num_floors):
+                curBuilding.addFloor(worksheet[x + i])
             buildingList.append(curBuilding)
 
     retList = [churchList, buildingList]
@@ -37,7 +42,7 @@ def isValidChurch(input):
 
 #returns true if building is valid
 def isValidBuilding(input):
-    if type(input[2].value) == int: #assume that if floor 1 rooms is an int then building is valid
+    if type(input[2].value) == int: #assume that if num_floors is an int then building is valid
         return True
     else:
         return False

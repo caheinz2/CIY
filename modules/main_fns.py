@@ -39,14 +39,13 @@ def canFit(church, building, gender):
         adults = church.getFemaleAdults()
 
     people = students + adults
-    rooms = building.getTotalRooms()
     capacity = building.getTotalCap()
 
     #Too many people
     if people > capacity:
         return False #"Too Many People"
 
-    #Not enough rooms for adult/student seperation
+    #Not enough rooms for adult/student seperation, also 2 adults per room
     adult_rooms = int(math.ceil(adults / 2))
     student_rooms = rooms - adult_rooms
     needed_rooms = int(math.ceil(students/(capacity/rooms)))
