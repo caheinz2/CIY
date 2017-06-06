@@ -1,3 +1,14 @@
 1) in heap.py, constructing a heap out of a list and then operating on the heap changes the list.
     -fixed 5/22/17
 
+2) the algorithm is not guaranteed to find the best possible fit...just a (on average) pretty good one. I would
+  classify the best fit as the one that splits a church between buildings the fewest possible times and between buildings
+  that are physically closest to one another. Other factors of good fits include a low deviation from the mean building
+  occupancy percentage and the ability to accommodate requests. I have not built these considerations into the algorithm yet.
+  It is also not guaranteed that the algorithm finds a solution when one exists. There is a small chance
+  (which I haven't yet mathematically calculated). This is because the algorithm makes some sacrifices from
+  the minimum solution to find a preferred solution. For example, maybe the minimum solution may involve
+  housing all the adults on one floor but that obviously isn't preferred. However, the cost of a more preferred solution
+  should be very small (< 10 on the building's capacity) that I would say this isn't too big of an issue.
+
+3) Very little error handling! This is my biggest priority right now.
