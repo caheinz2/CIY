@@ -69,6 +69,12 @@ class church:
     def getContactCell(self):
         return self.contact[3]
 
+    def getAdultRooms(self, gender):
+        if gender == "Male":
+            return int(self.getMaleAdults() / 2) + self.getMaleAdults() % 2 #2 adults per room
+        else:
+            return int(self.getFemaleAdults() / 2) + self.getFemaleAdults() % 2
+
     #helper functions
 
     #comparison overloads

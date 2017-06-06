@@ -28,14 +28,15 @@ class building:
                     retVal.append(rooms[i])
                 i += 2
 
+            retVal.sort()
             return retVal
 
 
         #returns a list of the [number] smallest room capacities.
         def minRooms(self, number):
             retVal = []
-            rooms = self.expandRooms
-            if len(rooms) > number:
+            rooms = self.expandRooms()
+            if len(rooms) <= number:
                 retVal = rooms
 
             else:
@@ -64,12 +65,33 @@ class building:
         f = building.floor(rooms)
         self.floors.append(f)
 
+    #distributes adult rooms while considering floor weight.
+    #returns a list of pairs of floor / number of rooms per floor
+    #floor_numbers is a list of the floors wanted or 0 for all
+    def adult_distribution(self, adult_rooms, floor_numbers):
+        floor_capacity = self.getFloorCapacities(floor_numbers)
+        distribution = []
+        total_capacity = sum(floor_capacity)
+        completed = 0
+
+        for i in range(len(floor_capacity) - 1):
+            cur_floor = floor_numbers[i]
+            cur_adults= floor_capacity[i] * adult_rooms / total_capacity #weighted number of adult rooms on given floor
+            cur_adults = int(cur_adults)
+            if cur_adults == 0 and adult_rooms - completed > 1:
+                cur_adults += 1
+            distribution.append([cur_floor, cur_adults])
+            completed += cur_adults
+
+        distribution.append([floor_numbers[-1], adult_rooms - completed]) #last floor has all remaining adult rooms. REVISE THIS LATER
+        return distribution
+
     #call these functions to get important data
     def getNumFloors(self):
         return len(self.floors)
 
-    def getFloor(self, floor):
-        return self.floors(floor - 1)
+    def getFloor(self, floor_number): #floor_number must be at > 1
+        return self.floors[floor_number - 1]
 
     def getTotalCap(self):
         retVal = 0
@@ -79,6 +101,21 @@ class building:
 
     def getGender(self):
         return self.gender
+
+    #returns a list of all floor capacities listed in the floor_numbers list.
+    #if floor_numbers is 0, returns floor capacities for all floors.
+    def getFloorCapacities(self, floor_numbers):
+        if floor_numbers[0] == 0: #handles 0 as input
+            for i in range (self.getNumFloors()):
+                    floor_numbers.append(i + 1)
+            floor_numbers.remove(0)
+
+        floor_capacity = []
+        for item in floor_numbers:
+            floor_capacity.append(self.getFloor(item).floorCapacity()) #put the capacities of the given floors in floor_capacity
+
+        return floor_capacity
+
 
     #helper functions
 

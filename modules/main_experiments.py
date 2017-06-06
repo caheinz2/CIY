@@ -9,17 +9,70 @@ churchList = inputList[0]
 buildingList = inputList[1]
 buildingList.sort()
 
-#val = main_fns.canFit(churchList[1], buildingList[0], "Female")
+#val = main_fns.canFit(churchList[0], buildingList[0], "Female")
 #print(val)
+#print( )
 
 #val = main_fns.canFit(churchList[0], buildingList[0], "Male")
 #print(val)
+#print( )
 
-#val = main_fns.canFit(churchList[1], buildingList[2], "Female")
+#val = main_fns.canFit(churchList[0], buildingList[1], "Female")
 #print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[0], buildingList[1], "Male")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[0], buildingList[2], "Female")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[0], buildingList[2], "Male")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[0], buildingList[3], "Female")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[0], buildingList[3], "Male")
+#print(val)
+#print( )
+
+
+#val = main_fns.canFit(churchList[1], buildingList[0], "Female")
+#print(val)
+#print( )
 
 #val = main_fns.canFit(churchList[1], buildingList[0], "Male")
 #print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[1], "Female")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[1], "Male")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[2], "Female")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[2], "Male")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[3], "Female")
+#print(val)
+#print( )
+
+#val = main_fns.canFit(churchList[1], buildingList[3], "Male")
+#print(val)
+#print( )
 
 val = main_fns.findBestFit(churchList[0], buildingList, "Male")
 print(val)
