@@ -18,9 +18,11 @@ def findBestFit(church, buildings, gender):
     for building in buildings:
         if canFit(church, building, gender):
             return building
+        elif building.getGender() == gender:
+            best_so_far = building
 
-    #RAISE ERROR! CHURCH CAN'T FIT ANYWHERE
-    return
+    #Church can't fit in any 1 building so return largest compatable building
+    return best_so_far
 
 #returns true if church can fit in building
 def canFit(church, building, gender):
@@ -39,29 +41,18 @@ def canFit(church, building, gender):
         adults = church.getFemaleAdults()
 
     people = students + adults
-    capacity = building.getTotalCap()
+    capacity = building.getVacantCap()
 
     #Too many people
     if people > capacity:
         return False #"Too Many People"
 
     #Not enough rooms for adult/student seperation, also 2 adults per room
-    adult_floors = building.adult_distribution(church.getAdultRooms(gender), [0])
-    lost_capacity = adultCost(adults, building, adult_floors)
+    adult_floors = building.adult_distribution(church.getAdultRooms(gender), [0], students)
+    lost_capacity = building.adultCost(adults, adult_floors)
 
     if capacity < people + lost_capacity:
         return False #"Not Enough Student Rooms"
 
     #else the church can fit
     return True
-
-#determines the capacity lost due to housing adults. EG if 2 adults are housed in a 3 person room, this fn returns 1
-def adultCost(adults, building, adult_floors):
-    lost_capacity = adults % 2 #if odd number of adults, one more spot is lost
-
-    for pair in adult_floors:
-        floor = building.getFloor(pair[0])
-        rooms = floor.minRooms(pair[1])
-        lost_capacity += sum(rooms) - (pair[1] * 2)
-
-    return lost_capacity

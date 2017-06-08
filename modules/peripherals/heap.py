@@ -12,7 +12,7 @@ class heap:
     def pop(self):
         retVal = self.data[1]
         self.swap(1, len(self.data) - 1)
-        self.data.pop(len(self.data) - 1) #removes last spot from list
+        self.data.pop() #removes last spot from list
         self.heapifyDown(1)
         return retVal
 
