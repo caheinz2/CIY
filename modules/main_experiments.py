@@ -1,6 +1,7 @@
 import peripherals.myio as myio
 import peripherals.churches as churches
 import peripherals.buildings as buildings
+import peripherals.heap as heap
 import main_fns
 
 
@@ -8,6 +9,9 @@ inputList = myio.input('documentation/TN7_Test.xlsx')
 churchList = inputList[0]
 buildingList = inputList[1]
 buildingList.sort()
+building_list = heap.heap()
+building_list.heapify(buildingList)
+buildingList = building_list
 
 #val = main_fns.canFit(churchList[0], buildingList[0], "Female")
 #print(val)
@@ -73,6 +77,7 @@ buildingList.sort()
 #val = main_fns.canFit(churchList[1], buildingList[3], "Male")
 #print(val)
 #print( )
+print(churchList[0], churchList[1])
 
 val = main_fns.findBestFit(churchList[0], buildingList, "Male")
 print(val)

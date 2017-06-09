@@ -11,4 +11,5 @@
   housing all the adults on one floor but that obviously isn't preferred. However, the cost of a more preferred solution
   should be very small (< 10 on the building's capacity) that I would say this isn't too big of an issue.
 
-3) Very little error handling! This is my biggest priority right now.
+3) Very little error handling! This is my biggest priority right now. Right now error handling for not all churches fitting
+    is just an interrupt in main_fns.py/findBestFit.

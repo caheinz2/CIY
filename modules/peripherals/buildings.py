@@ -67,13 +67,6 @@ class building:
         print("    Gender: {}".format(self.gender))
         return "\n"
 
-    def addFloor(self, info):
-        rooms = []
-        for cell in info:
-            if type(cell.value) == int:
-                rooms.append(cell.value)
-        f = building.floor(rooms)
-        self.floors.append(f)
 
     #call these functions to get/set important data
     def getNumFloors(self):
@@ -100,6 +93,13 @@ class building:
     def setGender(self, gender): #raise error if not "Male", "Female", or "Unassigned"
         self.gender = gender
 
+    def getName(self):
+        return self.name
+
+    def getChurches(self): #list of [church, floor number 1 adults/ rooms, floor 1 students/ rooms, floor 2 adult rooms, etc]
+        return self.churches
+
+
     #returns a list of all floor capacities listed in the floor_numbers list.
     #if floor_numbers is 0, returns floor capacities for all floors.
     def getFloorCapacities(self, floor_numbers):
@@ -114,21 +114,24 @@ class building:
 
         return floor_capacity
 
-    def getChurches(self): #list of [church, floor number 1 adults/ rooms, floor 1 students/ rooms, floor 2 adult rooms, etc]
-        return self.churches
-
     #distributes adult rooms while considering number of students on each floor
     #returns a list of pairs of floor / number of rooms per floor
-    #floor_numbers is a list of the floors wanted or 0 for all
-    def adult_distribution(self, adult_rooms, floor_numbers, num_students):
-        if floor_numbers[0] == 0: #handles 0 as input
-            for i in range (self.getNumFloors()):
-                    floor_numbers.append(i + 1)
-            floor_numbers.remove(0)
+    def adult_distribution(self, church, gender):
+
+        floor_numbers = []
+        for i in range (self.getNumFloors()):
+            floor_numbers.append(i + 1)
+
+        if gender == "Male":
+            num_unhoused_students = church.getMaleStudents() - church.getHousedMaleStudents()
+            num_students = church.getMaleStudents()
+        else:
+            num_unhoused_students = church.getFemaleStudents() - church.getHousedFemaleStudents()
+            num_students = church.getFemaleStudents()
 
         distribution = []
         completed = 0
-        num_unhoused_students = num_students
+        adult_rooms = church.getAdultRooms(gender)
 
         i = 0
         while num_unhoused_students > 0 and i < len(floor_numbers):
@@ -136,14 +139,15 @@ class building:
             cur_adults = min(cur_floor.floorCapacity(), num_unhoused_students) * adult_rooms / num_students
             cur_adults = int(cur_adults)
 
-            if cur_adults == 0 and adult_rooms - completed > 1:
+            if cur_adults == 0 and (adult_rooms - completed > 1 or num_unhoused_students == 0) and cur_floor.floorCapacity() > 3:
                 cur_adults += 1
             distribution.append([floor_numbers[i], cur_adults])
             completed += cur_adults
             num_unhoused_students -= cur_floor.floorCapacity() - sum(cur_floor.minRooms(cur_adults))
             i += 1
 
-        distribution[-1][1] += (adult_rooms - completed) #last floor has all remaining adult rooms. REVISE THIS LATER?
+        if num_unhoused_students <= 0:
+            distribution[-1][1] += (adult_rooms - completed) #last floor has all remaining adult rooms...if all students are housed. REVISE THIS LATER?
         return distribution #list of [floor number, adult rooms on floor] pairs
 
     #determines the capacity lost due to housing adults. EG if 2 adults are housed in a 3 person room, this fn returns 1
@@ -163,12 +167,12 @@ class building:
     #Gender should be compatable with building and will update the building gender (if it is unassigned)
     def addChurch(self, church, gender):
         if gender == "Male":
-            num_students = church.getMaleStudents()
+            num_unhoused_students = church.getMaleStudents() - church.getHousedMaleStudents()
         else:
-            num_students = church.getFemaleStudents()
+            num_unhoused_students = church.getFemaleStudents() - church.getHousedFemaleStudents()
         self.setGender(gender)
 
-        adult_floors = self.adult_distribution(church.getAdultRooms(gender), [0], num_students)
+        adult_floors = self.adult_distribution(church, gender)
         church_list = [self] #list to add to church
         building_list = [church] #list to add to building
 
@@ -180,23 +184,26 @@ class building:
             for item in type_adult_rooms:
                 rooms.remove(item)
 
-            cur_floor_capacity = sum(rooms)
-            cur_floor_students = 0
             type_student_rooms = []
-            while num_students > 0 and cur_floor_capacity > 0:
-                if num_students in rooms: #if 1 room can fit all remaining students, use that room
-                    type_student_rooms.append(num_students)
-                    cur_floor_students += num_students
-                    rooms.remove(num_students)
-                    num_students = 0
+            while num_unhoused_students > 0 and len(rooms) > 0:
+                if num_unhoused_students in rooms: #if 1 room can fit all remaining students, use that room
+                    type_student_rooms.append(num_unhoused_students)
+                    rooms.remove(num_unhoused_students)
+                    num_unhoused_students = 0
+
+                elif num_unhoused_students < rooms[0]:
+                    type_student_rooms.append(rooms[0])
+                    num_unhoused_students -= rooms[0]
+                    rooms.remove(rooms[0])
+
                 else: #use the biggest room possible and update the number of students
                     type_student_rooms.append(rooms[-1])
-                    num_students -= rooms[-1] #rooms is sorted
-                    cur_floor_capacity -= rooms[-1]
-                    cur_floor_students += rooms[-1]
+                    num_unhoused_students -= rooms[-1] #rooms is sorted
                     rooms.remove(rooms[-1])
 
             #format type_x_rooms and rooms and push them to the list
+            cur_floor_students = sum(type_student_rooms)
+
             rooms = self.formatRooms(rooms)
             type_adult_rooms = self.formatRooms(type_adult_rooms)
             type_student_rooms = self.formatRooms(type_student_rooms)
@@ -216,6 +223,13 @@ class building:
 
 
     #helper functions
+    def addFloor(self, info):
+        rooms = []
+        for cell in info:
+            if type(cell.value) == int:
+                rooms.append(cell.value)
+        f = building.floor(rooms)
+        self.floors.append(f)
 
     def formatRooms(self, expanded_list):
         retVal = []
@@ -230,21 +244,26 @@ class building:
     def printChurches(self):
         for item in self.churches:
             church = item[0]
-            print("    {} in {}".format(church.getName(), church.getAddress()))
+            print("    {} from {}".format(church.getName(), church.getAddress()))
             i = 1
             while i < len(item):
-                print("        floor {}: ".format(item[i]))
-                for adults in item[i + 1]:
-                    print("            {} adult rooms from {}-person rooms".format(adults[1], adults[0]))
-                for students in item[i + 2][1]:
-                    print("            {} {}-person student rooms".format(students[1], students[0]))
+                if item[i+1] != [] or item[i+2][0] != 0:
+                    print("        floor {}: ".format(item[i]))
+                    for adults in item[i + 1]:
+                        print("            {} adult rooms from {}-person rooms".format(adults[1], adults[0]))
+                    for students in item[i + 2][1]:
+                        print("            {} {}-person student rooms".format(students[1], students[0]))
                 i += 3
+            print()
 
         print()
 
-    #comparison overloads
+    #comparison overloads. These are reversed on purpose because I want a min heap for them (not a max heap)
     def __lt__(self, other):
-        return self.getTotalCap() < other.getTotalCap()
+        return self.getVacantCap() > other.getVacantCap()
 
     def __gt__(self, other):
-        return self.getTotalCap() > other.getTotalCap()
+        return self.getVacantCap() < other.getVacantCap()
+
+    def __eq__(self, other):
+        return self.name == other.name

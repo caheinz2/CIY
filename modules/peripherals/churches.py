@@ -31,7 +31,7 @@ class church:
         print( "    Address: " + self.city +  ", " + self.state + ", " + self.zipcode)
         print("    Adults: {} males and {} females".format(self.male_adults, self.female_adults))
         print("    Students: {} males and {} females".format(self.male_students, self.female_students))
-        print("    Children: {} males and {} females".format(self.male_children, self.female_children))
+        #print("    Children: {} males and {} females".format(self.male_children, self.female_children))
         print("    Contact Information: {} {} {} {}".format(self.contact[0], self.contact[1], self.contact[2], self.contact[3]))
 
         return "\n"
@@ -53,6 +53,8 @@ class church:
         return self.housed_male_adults
 
     def setHousedMaleAdults(self, number):
+        if number > self.male_adults:
+            number = self.male_adults
         self.housed_male_adults = number
 
     def getFemaleAdults(self):
@@ -62,6 +64,8 @@ class church:
         return self.housed_female_adults
 
     def setHousedFemaleAdults(self, number):
+        if number > self.female_adults:
+            number = self.female_adults
         self.housed_female_adults = number
 
     def getStudents(self):
@@ -74,6 +78,8 @@ class church:
         return self.housed_male_students
 
     def setHousedMaleStudents(self, number):
+        if number > self.male_students:
+            number = self.male_students
         self.housed_male_students = number
 
     def getFemaleStudents(self):
@@ -83,6 +89,8 @@ class church:
         return self.housed_female_students
 
     def setHousedFemaleStudents(self, number):
+        if number > self.female_students:
+            number = self.female_students
         self.housed_female_students = number
 
     def getChildren(self):
@@ -122,8 +130,7 @@ class church:
 
         #update housed people
         gender = list[0].getGender()
-        list.pop(0)
-        i = 0
+        i = 1
         while i < len(list):
             if gender == "Male":
                 self.setHousedMaleAdults(self.getHousedMaleAdults() + list[i+1])
@@ -132,6 +139,18 @@ class church:
                 self.setHousedFemaleAdults(self.getHousedFemaleAdults() + list[i+1])
                 self.setHousedFemaleStudents(self.getHousedFemaleStudents() + list[i+2])
             i += 3
+
+    def printBuildings(self):
+        for building in self.buildings:
+            print("    {}".format(building[0].getName()))
+            print("        {} Dorm".format(building[0].getGender()))
+            floors = building[1:]
+            i = 0
+            while i < len(floors):
+                if(floors[i+1] != 0 or floors[i+2] != 0):
+                    print("        Floor {}: {} adults and {} students".format(floors[i], floors[i+1], floors[i+2]))
+                i += 3
+            print()
 
 
 
