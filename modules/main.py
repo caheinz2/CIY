@@ -12,8 +12,7 @@ building_list.sort()
 church_heap = heap.heap()
 church_heap.heapify(church_list)
 
-building_heap = heap.heap()
-building_heap.heapify(building_list)
+vacant_building_list = list(building_list)
 
 #for building in building_list:
 #    print(building)
@@ -23,27 +22,27 @@ building_heap.heapify(building_list)
 
 #print(church_heap.isEmpty())
 #print(building_heap.isEmpty())
-while not church_heap.isEmpty() and not building_heap.isEmpty():
+while not church_heap.isEmpty() and len(vacant_building_list) > 0:
     cur_church = church_heap.pop()
 
     if cur_church.getMaleStudents() - cur_church.getHousedMaleStudents() > 0:
-        male_best_building = main_fns.findBestFit(cur_church, building_heap, "Male")
-        a_list = male_best_building.addChurch(cur_church, "Male")
+        male_best_building = main_fns.findBestFit(cur_church, vacant_building_list, "Male")
+        a_list = male_best_building.addChurch(cur_church, "Male", False)
         cur_church.addBuilding(a_list)
-        if male_best_building.getVacantCap() > 3:
-            building_heap.push(male_best_building)
+        if male_best_building.getVacantCap() < 3:
+            vacant_building_list.remove(male_best_building)
 
     if cur_church.getFemaleStudents() - cur_church.getHousedFemaleStudents() > 0:
-        female_best_building = main_fns.findBestFit(cur_church, building_heap, "Female")
-        b_list = female_best_building.addChurch(cur_church, "Female")
+        female_best_building = main_fns.findBestFit(cur_church, vacant_building_list, "Female")
+        b_list = female_best_building.addChurch(cur_church, "Female", False)
         cur_church.addBuilding(b_list)
-        if female_best_building.getVacantCap() > 3:
-            building_heap.push(female_best_building)
+        if female_best_building.getVacantCap() < 3:
+            vacant_building_list.remove(female_best_building)
 
     if cur_church.getTotal() - cur_church.getHousedTotal() > 0:
         church_heap.push(cur_church)
 
-if building_heap.isEmpty() and not church_heap.isEmpty():
+if len(vacant_building_list) == 0 and not church_heap.isEmpty():
     print("NOT ALL CHURCHES FIT")
 
 else:
@@ -60,4 +59,7 @@ else:
         print()
 
 
-print("Total Lost Capacity is: {}".format(main_fns.totalCost(church_list, building_list)))
+print("Total lost capacity is: {}".format(main_fns.totalCost(church_list, building_list)))
+print("Minimum possible lost capacity due to adults is: {}".format(main_fns.minAdultCost(church_list)))
+print("Acutal lost capacity due to adults is: {}".format(main_fns.actualAdultCost(church_list, building_list)))
+print("Lost capacity due to students is: {}".format(main_fns.actualStudentCost(church_list, building_list)))

@@ -165,59 +165,61 @@ class building:
     #Updates building stats
     #Marks in the church building information.
     #Gender should be compatable with building and will update the building gender (if it is unassigned)
-    def addChurch(self, church, gender):
+    def addChurch(self, church, gender, simulate):
         if gender == "Male":
             num_unhoused_students = church.getMaleStudents() - church.getHousedMaleStudents()
         else:
             num_unhoused_students = church.getFemaleStudents() - church.getHousedFemaleStudents()
-        self.setGender(gender)
+        if not simulate:
+            self.setGender(gender)
 
         adult_floors = self.adult_distribution(church, gender)
         church_list = [self] #list to add to church
         building_list = [church] #list to add to building
+        cost = 0
 
         for pair in adult_floors:
             cur_floor = self.getFloor(pair[0])
             rooms = cur_floor.expandRooms()
             num_adult_rooms = pair[1]
             type_adult_rooms = cur_floor.minRooms(num_adult_rooms)
+            cost += sum(type_adult_rooms) - (2 * num_adult_rooms)
+
             for item in type_adult_rooms:
                 rooms.remove(item)
 
-            type_student_rooms = []
-            while num_unhoused_students > 0 and len(rooms) > 0:
-                if num_unhoused_students in rooms: #if 1 room can fit all remaining students, use that room
-                    type_student_rooms.append(num_unhoused_students)
-                    rooms.remove(num_unhoused_students)
-                    num_unhoused_students = 0
+            type_student_rooms = self.fillRooms(num_unhoused_students, rooms)
 
-                elif num_unhoused_students < rooms[0]:
-                    type_student_rooms.append(rooms[0])
-                    num_unhoused_students -= rooms[0]
-                    rooms.remove(rooms[0])
-
-                else: #use the biggest room possible and update the number of students
-                    type_student_rooms.append(rooms[-1])
-                    num_unhoused_students -= rooms[-1] #rooms is sorted
-                    rooms.remove(rooms[-1])
+            #update rooms
+            for item in type_student_rooms:
+                rooms.remove(item)
 
             #format type_x_rooms and rooms and push them to the list
             cur_floor_students = sum(type_student_rooms)
+            num_unhoused_students -= cur_floor_students
 
             rooms = self.formatRooms(rooms)
             type_adult_rooms = self.formatRooms(type_adult_rooms)
             type_student_rooms = self.formatRooms(type_student_rooms)
 
-            cur_floor.setRooms(rooms)
-            church_list.append(pair[0])
-            church_list.append(num_adult_rooms * 2)
-            church_list.append(cur_floor_students)
+            if not simulate:
+                cur_floor.setRooms(rooms)
+                church_list.append(pair[0])
+                church_list.append(num_adult_rooms * 2)
+                church_list.append(cur_floor_students)
 
-            building_list.append(pair[0])
-            building_list.append(type_adult_rooms)
-            building_list.append([cur_floor_students, type_student_rooms])
+                building_list.append(pair[0])
+                building_list.append(type_adult_rooms)
+                building_list.append([cur_floor_students, type_student_rooms])
 
-        self.churches.append(building_list)
+        cost += abs(num_unhoused_students)
+
+        if not simulate:
+            self.churches.append(building_list)
+
+        if simulate:
+            return cost
+
 
         return church_list
 
@@ -240,6 +242,37 @@ class building:
                 retVal.append([item, expanded_list.count(item)])
 
         return retVal
+
+    #returns a list of rooms that the students will occupy.
+    def fillRooms(self, num_unhoused_students, rooms):
+        if rooms == []:
+            return []
+
+        if num_unhoused_students < rooms[0]:
+            return [rooms[0]]
+
+        else:
+            retVal = self.fillRoomsRecursive(num_unhoused_students, rooms)
+            return retVal[:-1]
+
+    def fillRoomsRecursive(self, num_unhoused_students, rooms):
+        if num_unhoused_students <= 0:
+            return [num_unhoused_students]
+        elif len(rooms) == 0:
+            return [-100]
+        else:
+            retVal = []
+            t = len(rooms)
+            for i in range(t):
+                curVal = self.fillRoomsRecursive(num_unhoused_students - rooms[-(i+1)], rooms[:-(i+1)])
+                curVal.insert(0, rooms[-(i+1)])
+
+                if retVal == [] or curVal[-1] > retVal[-1]:
+                    retVal = curVal
+                if retVal[-1] == 0:
+                    break
+        return retVal
+
 
     def printChurches(self):
         for item in self.churches:

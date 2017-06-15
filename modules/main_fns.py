@@ -6,46 +6,25 @@ import math
 
 #given a church max priority queue and a building min priority queue, finds the best one to put the top church in.
 #as of now, the best fit is defined to be the first possible fit.
-def findBestFit(church, building_heap, gender):
-    temp = [] #used to store buildings that will be pushed back to the heap
-    retVal = "Error: No buildings can fit church"
-    temp_retVal = retVal
-    #print(church, gender)
-    while not building_heap.isEmpty():
-        cur_building = building_heap.pop()
-        temp.append(cur_building)
-        #print(cur_building)
+def findBestFit(church, building_list, gender):
+    best_so_far = None
+    cost_so_far = 1000
 
-        can_fit = canFit(church, cur_building, gender)
-        #print(can_fit)
-        #If entire church can fit in the current building and the current building's gender has been assigned, return it.
-        if can_fit and cur_building.getGender() == gender:
-            retVal = cur_building
-            break
+    for cur_building in building_list:
+        cost = 0
+        if not canFit(church, cur_building, gender):
+            cost += 15
+        if cur_building.getGender() == "Unassigned":
+            cost += 15
+        if cur_building.getGender() == gender or cur_building.getGender() == "Unassigned":
 
-        #If entire church can fit but gender hasn't been assigned, check if it is the best unassigned fit
-        elif can_fit and type(retVal) == str:
-            retVal = cur_building
+            cost += cur_building.addChurch(church, gender, True)
 
-        #If church doesn't fit but the building is compatable, save it in case no better building is found
-        elif not can_fit and type(temp_retVal) == str and (cur_building.getGender() == gender or cur_building.getGender() == "Unassigned"):
-            temp_retVal = cur_building
+            if cost < cost_so_far:
+                best_so_far = cur_building
+                cost_so_far = cost
 
-        elif not can_fit and cur_building.getGender() == gender:
-            temp_retVal = cur_building
-
-        elif not can_fit and cur_building.getGender() == "Unassigned" and temp_retVal.getGender() == "Unassigned":
-            temp_retVal = cur_building
-
-    if type(retVal) == str and type(temp_retVal) != str:
-        retVal = temp_retVal
-
-    if type(retVal) != str:
-        temp.remove(retVal)
-        for item in temp:
-            building_heap.push(item)
-
-    return retVal
+    return best_so_far
 
 #returns true if church can fit in building
 def canFit(church, building, gender):
@@ -89,3 +68,30 @@ def totalCost(church_list, building_list):
     for church in church_list:
         retVal -= church.getTotal()
     return retVal
+
+#computes the minimum total adult cost
+def minAdultCost(church_list):
+    retVal = 0
+    for church in church_list:
+        retVal += church.getMaleAdults() % 2
+        retVal += church.getFemaleAdults() % 2
+
+    return retVal
+
+def actualAdultCost(church_list, building_list):
+    return totalCost(church_list, building_list) - actualStudentCost(church_list, building_list)
+
+def actualStudentCost(church_list, building_list):
+    housed_students = 0
+    total_students = 0
+    for building in building_list:
+        churches = building.getChurches()
+        for church in churches:
+            i = 3
+            while i < len(church):
+                housed_students += church[i][0]
+                i += 3
+    for church in church_list:
+        total_students += church.getStudents()
+
+    return housed_students - total_students

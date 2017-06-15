@@ -123,6 +123,9 @@ class church:
         else:
             return int(self.getFemaleAdults() / 2) + self.getFemaleAdults() % 2
 
+    def getBuildings(self):
+        return self.buildings
+
     #helper functions
 
     def addBuilding(self, list): #[building, floor # 1 number, floor # 1 adults, floor # 1 students, etc]

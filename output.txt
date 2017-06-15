@@ -2,46 +2,437 @@
 Noyes Hall
     Number of Floors: 3
     Total Capacity: 245 
-    Occupied Capacity: 213 
+    Occupied Capacity: 245 
+    Gender: Male
+
+
+    Christian Church from Prairie Grove Arkansas (AR)
+        floor 1: 
+            4 adult rooms from 2-person rooms
+            10 3-person student rooms
+            5 2-person student rooms
+
+    Tomoka Christian Church from Ormond Beach Florida (FL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            13 2-person student rooms
+
+    Kinmundy Christian Church from Kinmundy Illinois (IL)
+        floor 1: 
+            3 adult rooms from 2-person rooms
+            3 2-person student rooms
+        floor 2: 
+            1 4-person student rooms
+
+    Belmont Christian Church from Christiansburg Virginia (VA)
+        floor 2: 
+            1 adult rooms from 4-person rooms
+            3 4-person student rooms
+
+    Mount Pulaski Christian Church from Mount Pulaski Illinois (IL)
+        floor 2: 
+            2 adult rooms from 4-person rooms
+            4 4-person student rooms
+
+    Connect Christian Church from Concord North Carolina (NC)
+        floor 2: 
+            2 adult rooms from 4-person rooms
+            3 4-person student rooms
+
+    Milford Christian Church from Milford Missouri (MO)
+        floor 2: 
+            1 adult rooms from 4-person rooms
+            3 4-person student rooms
+        floor 3: 
+            2 2-person student rooms
+
+    Salty Church from ormond beach Florida (FL)
+        floor 3: 
+            2 adult rooms from 2-person rooms
+            5 3-person student rooms
+
+    Cornerstone Christian Church from Deltona Florida (FL)
+        floor 3: 
+            2 adult rooms from 2-person rooms
+            4 3-person student rooms
+
+    Hope Church from Springfield Illinois (IL)
+        floor 3: 
+            1 adult rooms from 2-person rooms
+            2 3-person student rooms
+            1 2-person student rooms
+
+    Lehigh Acres Christian Church from Lehigh Acres Florida (FL)
+        floor 3: 
+            1 adult rooms from 2-person rooms
+            4 3-person student rooms
+            1 2-person student rooms
+
+    Highland Park Christian Church from Tulsa Oklahoma (OK)
+        floor 3: 
+            2 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+
+
+Henry Administration Building
+    Number of Floors: 3
+    Total Capacity: 220 
+    Occupied Capacity: 220 
     Gender: Female
 
 
+    Prairie Grove Christian Church from Prairie Grove Arkansas (AR)
+        floor 1: 
+            6 adult rooms from 2-person rooms
+            10 3-person student rooms
+            9 2-person student rooms
+        floor 2: 
+            1 5-person student rooms
+            2 2-person student rooms
+
+    Tomoka Christian Church from Ormond Beach Florida (FL)
+        floor 2: 
+            2 adult rooms from 2-person rooms
+            5 5-person student rooms
+
+    Kinmundy Christian Church from Kinmundy Illinois (IL)
+        floor 2: 
+            3 adult rooms from 2-person rooms
+            1 5-person student rooms
+            8 2-person student rooms
+
+    Belmont Christian Church from Christiansburg Virginia (VA)
+        floor 2: 
+            5 2-person student rooms
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            2 5-person student rooms
+            1 4-person student rooms
+
+    Mount Pulaski Christian Church from Mount Pulaski Illinois (IL)
+        floor 3: 
+            2 adult rooms from 3-person rooms
+            2 5-person student rooms
+            2 3-person student rooms
+
+    Connect Christian Church from Concord North Carolina (NC)
+        floor 3: 
+            2 adult rooms from 3-person rooms
+            4 4-person student rooms
+            1 3-person student rooms
+
+    Milford Christian Church from Milford Missouri (MO)
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            4 3-person student rooms
+
+    First Christian Church - Titusville from Titusville Florida (FL)
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            1 3-person student rooms
+
+
+
+Talbot Lab
+    Number of Floors: 3
+    Total Capacity: 200 
+    Occupied Capacity: 197 
+    Gender: Female
+
+
+    Salty Church from ormond beach Florida (FL)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            3 3-person student rooms
+            1 2-person student rooms
+
+    Cornerstone Christian Church from Deltona Florida (FL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            3 3-person student rooms
+            2 2-person student rooms
+
+    Hope Church from Springfield Illinois (IL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            5 3-person student rooms
+            1 2-person student rooms
+
+    Lehigh Acres Christian Church from Lehigh Acres Florida (FL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            2 3-person student rooms
+            2 2-person student rooms
+
+    Kings Way Christian Church from Mount Vernon Missouri (MO)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            4 3-person student rooms
+
+    Vero Christian Church from Vero Beach Florida (FL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            3 3-person student rooms
+            4 2-person student rooms
+
+    Bloomington Christian Church from Byrdstown Tennessee (TN)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            2 3-person student rooms
+            2 2-person student rooms
+
+    Highland Park Christian Church from Tulsa Oklahoma (OK)
+        floor 2: 
+            2 adult rooms from 2-person rooms
+            2 3-person student rooms
+            3 2-person student rooms
+
+    Christ's Community UMC from Joplin Missouri (MO)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 3-person student rooms
+            1 2-person student rooms
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            2 4-person student rooms
+
+    Community Christian Church from Dublin Virginia (VA)
+        floor 3: 
+            2 adult rooms from 3-person rooms
+            2 4-person student rooms
+            3 3-person student rooms
+
+    First Christian Church from Grove Oklahoma (OK)
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            4 3-person student rooms
+
+    Haw Branch Church of Christ from Chocowinity North Carolina (NC)
+        floor 3: 
+            1 adult rooms from 3-person rooms
+            1 4-person student rooms
+            2 3-person student rooms
+
+
+
+Wohler's Hall
+    Number of Floors: 2
+    Total Capacity: 146 
+    Occupied Capacity: 144 
+    Gender: Male
+
+
+    Kings Way Christian Church from Mount Vernon Missouri (MO)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            4 3-person student rooms
+
+    Vero Christian Church from Vero Beach Florida (FL)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            1 3-person student rooms
+            2 2-person student rooms
+
+    Bloomington Christian Church from Byrdstown Tennessee (TN)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            4 3-person student rooms
+
+    Christ's Community UMC from Joplin Missouri (MO)
+        floor 1: 
+            2 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    Community Christian Church from Dublin Virginia (VA)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            1 3-person student rooms
+
+    First Christian Church from Grove Oklahoma (OK)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    Haw Branch Church of Christ from Chocowinity North Carolina (NC)
+        floor 1: 
+            2 2-person student rooms
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 4-person student rooms
+
+    Connect Christian Church from Amelia Ohio (OH)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 4-person student rooms
+            1 2-person student rooms
+
+    CrossView Christian Church from Waynesville Ohio (OH)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 4-person student rooms
+
+    First Christian Church from Somerset Pennsylvania (PA)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
+
+    Horizon Christian Church from Valrico Florida (FL)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
+
     Bridge Christian Church from Fishersville Virginia (VA)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    Cornerstone Christian Church from Farmers Branch Texas (TX)
+        floor 2: 
+            2 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    First Christian Church from Brazil Indiana (IN)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    Madison Christian Church from Groveport Ohio (OH)
+        floor 2: 
+            2 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+
+
+Altgeld Hall
+    Number of Floors: 3
+    Total Capacity: 124 
+    Occupied Capacity: 122 
+    Gender: Female
+
+
+    Connect Christian Church from Amelia Ohio (OH)
         floor 1: 
             1 adult rooms from 2-person rooms
             3 3-person student rooms
 
-    Cornerstone Christian Church from Farmers Branch Texas (TX)
+    CrossView Christian Church from Waynesville Ohio (OH)
         floor 1: 
+            2 adult rooms from 2-person rooms
+            2 3-person student rooms
+            3 2-person student rooms
+
+    First Christian Church from Somerset Pennsylvania (PA)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    Horizon Christian Church from Valrico Florida (FL)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
+
+    Bridge Christian Church from Fishersville Virginia (VA)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
+        floor 2: 
+            1 2-person student rooms
+
+    Cornerstone Christian Church from Farmers Branch Texas (TX)
+        floor 2: 
             1 adult rooms from 2-person rooms
             2 3-person student rooms
             1 2-person student rooms
 
     First Christian Church from Brazil Indiana (IN)
-        floor 1: 
+        floor 2: 
             1 adult rooms from 2-person rooms
             3 3-person student rooms
 
     Madison Christian Church from Groveport Ohio (OH)
-        floor 1: 
+        floor 2: 
             1 adult rooms from 2-person rooms
-            2 3-person student rooms
-            1 2-person student rooms
+            4 2-person student rooms
+
+    Parkview Christian Church from Findlay Ohio (OH)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
 
     First Christian Church from King North Carolina (NC)
-        floor 1: 
+        floor 2: 
             1 adult rooms from 2-person rooms
             3 2-person student rooms
 
     Center Point Christian Church from carthage Missouri (MO)
-        floor 1: 
+        floor 2: 
             1 adult rooms from 2-person rooms
-            3 2-person student rooms
+            2 2-person student rooms
+        floor 3: 
+            1 2-person student rooms
 
     Englewood Christian Church from Jacksonville Florida (FL)
-        floor 1: 
+        floor 3: 
             1 adult rooms from 2-person rooms
             4 2-person student rooms
+
+
+
+Grainger Library
+    Number of Floors: 4
+    Total Capacity: 105 
+    Occupied Capacity: 42 
+    Gender: Female
+
+
+    Northeast Christian Church from Middletown Delaware (DE)
+        floor 1: 
+            1 adult rooms from 3-person rooms
+            1 3-person student rooms
+
+    Lake City Christian Church from Lake City Florida (FL)
+        floor 1: 
+            1 adult rooms from 3-person rooms
+            2 3-person student rooms
+
+    Fayetteville Christian Church from Fayetteville Georgia (GA)
+        floor 1: 
+            1 adult rooms from 3-person rooms
+            2 3-person student rooms
+
+    South Lake Christian Church from Groveland Florida (FL)
+        floor 1: 
+            2 3-person student rooms
+
+    Christ's Church at Butler from Butler Indiana (IN)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    West Springs Church from Ballwin Missouri (MO)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    Epic Missions from Vero Beach Florida (FL)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+
+
+Memorial Stadium
+    Number of Floors: 2
+    Total Capacity: 80 
+    Occupied Capacity: 80 
+    Gender: Female
+
+
+    First Christian Church from Byrdstown Tennessee (TN)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
 
     Leclaire Christian Church from Edwardsville Illinois (IL)
         floor 1: 
@@ -53,537 +444,46 @@ Noyes Hall
             2 adult rooms from 2-person rooms
             3 2-person student rooms
 
-    First Christian Church - Titusville from Titusville Florida (FL)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            2 2-person student rooms
-
     Celebration Christian Church from Carrollton Virginia (VA)
         floor 1: 
-            1 2-person student rooms
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            2 4-person student rooms
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
 
     Adventure Christian Church from Tavares Florida (FL)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            2 4-person student rooms
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
 
     Seymour Heights Christian Church from Seymour Tennessee (TN)
-        floor 2: 
-            2 4-person student rooms
-
-    Vale Church from Bloomington Illinois (IL)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            2 4-person student rooms
-
-    First Christian Church from Moncks Corner South Carolina (SC)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            2 4-person student rooms
-
-    Mid Rivers Christian Church from Saint Peters Missouri (MO)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            2 4-person student rooms
-
-    Gateway Christian Church from Clarksville Tennessee (TN)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-            1 4-person student rooms
-
-    Peachtree City Christian Church from Peachtree City Georgia (GA)
-        floor 2: 
-            1 adult rooms from 4-person rooms
-        floor 3: 
-            1 3-person student rooms
-            1 2-person student rooms
-
-    Northeast Christian Church from Middletown Delaware (DE)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 3-person student rooms
-
-    Lake City Christian Church from Lake City Florida (FL)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            2 3-person student rooms
-
-    Fayetteville Christian Church from Fayetteville Georgia (GA)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 3-person student rooms
-            1 2-person student rooms
-
-    South Lake Christian Church from Groveland Florida (FL)
-        floor 3: 
-            2 3-person student rooms
-
-    Christ's Church at Butler from Butler Indiana (IN)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-
-    West Springs Church from Ballwin Missouri (MO)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-
-    Epic Missions from Vero Beach Florida (FL)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-
-
-
-Henry Administration Building
-    Number of Floors: 3
-    Total Capacity: 220 
-    Occupied Capacity: 215 
-    Gender: Male
-
-
-    Horizon Christian Church from Valrico Florida (FL)
         floor 1: 
-            1 adult rooms from 2-person rooms
-            2 3-person student rooms
             1 2-person student rooms
-
-    Bridge Christian Church from Fishersville Virginia (VA)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            1 3-person student rooms
-            1 2-person student rooms
-
-    Cornerstone Christian Church from Farmers Branch Texas (TX)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            1 3-person student rooms
-            1 2-person student rooms
-
-    First Christian Church from Brazil Indiana (IN)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            1 3-person student rooms
-            1 2-person student rooms
-
-    Madison Christian Church from Groveport Ohio (OH)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            1 3-person student rooms
-            1 2-person student rooms
-
-    Parkview Christian Church from Findlay Ohio (OH)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            2 3-person student rooms
-            1 2-person student rooms
-
-    First Christian Church from King North Carolina (NC)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            2 3-person student rooms
-
-    Center Point Christian Church from carthage Missouri (MO)
         floor 2: 
-            1 adult rooms from 2-person rooms
-            1 5-person student rooms
-            1 2-person student rooms
-
-    Englewood Christian Church from Jacksonville Florida (FL)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            1 5-person student rooms
-
-    First Christian Church from Byrdstown Tennessee (TN)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            2 5-person student rooms
-
-    Leclaire Christian Church from Edwardsville Illinois (IL)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            2 5-person student rooms
-
-    First Christian Church - Titusville from Titusville Florida (FL)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            1 5-person student rooms
-            1 2-person student rooms
-
-    Adventure Christian Church from Tavares Florida (FL)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            2 2-person student rooms
-
-    Seymour Heights Christian Church from Seymour Tennessee (TN)
-        floor 2: 
-            1 adult rooms from 2-person rooms
             2 2-person student rooms
 
     Vale Church from Bloomington Illinois (IL)
         floor 2: 
             1 adult rooms from 2-person rooms
-            1 2-person student rooms
+            4 2-person student rooms
 
     First Christian Church from Moncks Corner South Carolina (SC)
         floor 2: 
             1 adult rooms from 2-person rooms
-            2 2-person student rooms
+            3 2-person student rooms
 
     Mid Rivers Christian Church from Saint Peters Missouri (MO)
         floor 2: 
             1 adult rooms from 2-person rooms
-        floor 3: 
-            1 3-person student rooms
+            3 2-person student rooms
 
     Gateway Christian Church from Clarksville Tennessee (TN)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 5-person student rooms
-            1 3-person student rooms
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
 
     Peachtree City Christian Church from Peachtree City Georgia (GA)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 3-person student rooms
-
-    Northeast Christian Church from Middletown Delaware (DE)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 4-person student rooms
-
-    Lake City Christian Church from Lake City Florida (FL)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 3-person student rooms
-
-    Fayetteville Christian Church from Fayetteville Georgia (GA)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 3-person student rooms
-
-    Ross Christian Church from Hamilton Ohio (OH)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 5-person student rooms
-            1 3-person student rooms
-
-    South Lake Christian Church from Groveland Florida (FL)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 3-person student rooms
-
-    Christ's Church at Butler from Butler Indiana (IN)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 4-person student rooms
-
-    West Springs Church from Ballwin Missouri (MO)
-        floor 3: 
-            1 adult rooms from 4-person rooms
-            1 4-person student rooms
-
-    Epic Missions from Vero Beach Florida (FL)
-        floor 3: 
-            1 adult rooms from 4-person rooms
-            1 5-person student rooms
-
-
-
-Talbot Lab
-    Number of Floors: 3
-    Total Capacity: 200 
-    Occupied Capacity: 200 
-    Gender: Female
-
-
-    Lehigh Acres Christian Church from Lehigh Acres Florida (FL)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            3 3-person student rooms
-            1 2-person student rooms
-
-    Kings Way Christian Church from Mount Vernon Missouri (MO)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            4 3-person student rooms
-
-    Vero Christian Church from Vero Beach Florida (FL)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            5 3-person student rooms
-            1 2-person student rooms
-
-    Bloomington Christian Church from Byrdstown Tennessee (TN)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            3 3-person student rooms
-            1 2-person student rooms
-
-    Highland Park Christian Church from Tulsa Oklahoma (OK)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            4 3-person student rooms
-
-    Christ's Community UMC from Joplin Missouri (MO)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            1 3-person student rooms
-            5 2-person student rooms
-
-    Community Christian Church from Dublin Virginia (VA)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            5 3-person student rooms
-
-    First Christian Church from Grove Oklahoma (OK)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            6 2-person student rooms
-
-    Haw Branch Church of Christ from Chocowinity North Carolina (NC)
-        floor 2: 
-            2 2-person student rooms
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            1 4-person student rooms
-            1 3-person student rooms
-
-    Connect Christian Church from Amelia Ohio (OH)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            2 4-person student rooms
-            1 3-person student rooms
-
-    CrossView Christian Church from Waynesville Ohio (OH)
-        floor 3: 
-            2 adult rooms from 3-person rooms
-            2 4-person student rooms
-            2 3-person student rooms
-
-    Horizon Christian Church from Valrico Florida (FL)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            3 3-person student rooms
-
-    Parkview Christian Church from Findlay Ohio (OH)
-        floor 3: 
-            1 adult rooms from 3-person rooms
-            2 3-person student rooms
-
-
-
-Wohler's Hall
-    Number of Floors: 2
-    Total Capacity: 146 
-    Occupied Capacity: 146 
-    Gender: Male
-
-
-    Salty Church from ormond beach Florida (FL)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            5 3-person student rooms
-
-    Lehigh Acres Christian Church from Lehigh Acres Florida (FL)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            4 3-person student rooms
-            1 2-person student rooms
-
-    Kings Way Christian Church from Mount Vernon Missouri (MO)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            1 3-person student rooms
-            5 2-person student rooms
-
-    Vero Christian Church from Vero Beach Florida (FL)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            4 2-person student rooms
-
-    Bloomington Christian Church from Byrdstown Tennessee (TN)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            2 2-person student rooms
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            2 4-person student rooms
-
-    Highland Park Christian Church from Tulsa Oklahoma (OK)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            1 4-person student rooms
-            1 2-person student rooms
-
-    Christ's Community UMC from Joplin Missouri (MO)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            3 2-person student rooms
-
-    First Christian Church from Grove Oklahoma (OK)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            3 2-person student rooms
-
-    Haw Branch Church of Christ from Chocowinity North Carolina (NC)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            4 2-person student rooms
-
-    Connect Christian Church from Amelia Ohio (OH)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            3 2-person student rooms
-
-    CrossView Christian Church from Waynesville Ohio (OH)
         floor 2: 
             1 adult rooms from 2-person rooms
             2 2-person student rooms
-
-    First Christian Church from Somerset Pennsylvania (PA)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            4 2-person student rooms
-
-    Celebration Christian Church from Carrollton Virginia (VA)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-
-
-
-Altgeld Hall
-    Number of Floors: 3
-    Total Capacity: 124 
-    Occupied Capacity: 124 
-    Gender: Female
-
-
-    Belmont Christian Church from Christiansburg Virginia (VA)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            5 3-person student rooms
-            5 2-person student rooms
-
-    Connect Christian Church from Concord North Carolina (NC)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            10 2-person student rooms
-
-    Milford Christian Church from Milford Missouri (MO)
-        floor 1: 
-            2 2-person student rooms
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            2 3-person student rooms
-            1 2-person student rooms
-
-    Salty Church from ormond beach Florida (FL)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            3 3-person student rooms
-            1 2-person student rooms
-
-    Cornerstone Christian Church from Deltona Florida (FL)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            7 2-person student rooms
-
-    Hope Church from Springfield Illinois (IL)
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            6 2-person student rooms
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            3 2-person student rooms
-
-    First Christian Church from Byrdstown Tennessee (TN)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            2 2-person student rooms
-
-
-
-Grainger Library
-    Number of Floors: 4
-    Total Capacity: 105 
-    Occupied Capacity: 105 
-    Gender: Male
-
-
-    Kinmundy Christian Church from Kinmundy Illinois (IL)
-        floor 1: 
-            3 adult rooms from 3-person rooms
-            4 3-person student rooms
-
-    Belmont Christian Church from Christiansburg Virginia (VA)
-        floor 1: 
-            3 3-person student rooms
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            1 3-person student rooms
-
-    Mount Pulaski Christian Church from Mount Pulaski Illinois (IL)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            4 3-person student rooms
-            1 2-person student rooms
-
-    Connect Christian Church from Concord North Carolina (NC)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            3 3-person student rooms
-            1 2-person student rooms
-
-    Milford Christian Church from Milford Missouri (MO)
-        floor 2: 
-            2 3-person student rooms
-            3 2-person student rooms
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            2 2-person student rooms
-
-    Cornerstone Christian Church from Deltona Florida (FL)
-        floor 3: 
-            1 adult rooms from 2-person rooms
-            1 2-person student rooms
-        floor 4: 
-            1 adult rooms from 3-person rooms
-            4 3-person student rooms
-
-
-
-Memorial Stadium
-    Number of Floors: 2
-    Total Capacity: 80 
-    Occupied Capacity: 78 
-    Gender: Female
-
-
-    Tomoka Christian Church from Ormond Beach Florida (FL)
-        floor 1: 
-            2 adult rooms from 2-person rooms
-            13 2-person student rooms
-
-    Kinmundy Christian Church from Kinmundy Illinois (IL)
-        floor 1: 
-            1 adult rooms from 2-person rooms
-            4 2-person student rooms
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            7 2-person student rooms
-
-    Mount Pulaski Christian Church from Mount Pulaski Illinois (IL)
-        floor 2: 
-            2 adult rooms from 2-person rooms
-            8 2-person student rooms
 
 
 
@@ -591,21 +491,68 @@ Illini Union
     Number of Floors: 2
     Total Capacity: 80 
     Occupied Capacity: 78 
-    Gender: Female
+    Gender: Male
 
 
-    Prairie Grove Christian Church from Prairie Grove Arkansas (AR)
+    Leclaire Christian Church from Edwardsville Illinois (IL)
         floor 1: 
-            4 adult rooms from 2-person rooms
-            16 2-person student rooms
-        floor 2: 
             2 adult rooms from 2-person rooms
-            13 2-person student rooms
+            5 2-person student rooms
 
-    First Christian Church from Somerset Pennsylvania (PA)
+    First Christian Church - Titusville from Titusville Florida (FL)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            4 2-person student rooms
+
+    Celebration Christian Church from Carrollton Virginia (VA)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    Adventure Christian Church from Tavares Florida (FL)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    Seymour Heights Christian Church from Seymour Tennessee (TN)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    Vale Church from Bloomington Illinois (IL)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    First Christian Church from Moncks Corner South Carolina (SC)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    Mid Rivers Christian Church from Saint Peters Missouri (MO)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    Gateway Christian Church from Clarksville Tennessee (TN)
         floor 2: 
             1 adult rooms from 2-person rooms
             3 2-person student rooms
+
+    Peachtree City Christian Church from Peachtree City Georgia (GA)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    Northeast Christian Church from Middletown Delaware (DE)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            2 2-person student rooms
+
+    Lake City Christian Church from Lake City Florida (FL)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
 
 
 
@@ -616,15 +563,32 @@ Loomis Hall
     Gender: Male
 
 
-    Prairie Grove Christian Church from Prairie Grove Arkansas (AR)
-        floor 1: 
-            4 adult rooms from 2-person rooms
-            8 5-person student rooms
-
-    Community Christian Church from Dublin Virginia (VA)
+    Parkview Christian Church from Findlay Ohio (OH)
         floor 1: 
             1 adult rooms from 2-person rooms
             1 5-person student rooms
+            1 2-person student rooms
+
+    First Christian Church from King North Carolina (NC)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            1 5-person student rooms
+            1 2-person student rooms
+
+    Center Point Christian Church from carthage Missouri (MO)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            2 5-person student rooms
+
+    Englewood Christian Church from Jacksonville Florida (FL)
+        floor 1: 
+            1 adult rooms from 5-person rooms
+            1 5-person student rooms
+
+    First Christian Church from Byrdstown Tennessee (TN)
+        floor 1: 
+            1 adult rooms from 5-person rooms
+            2 5-person student rooms
 
     Peebles Church of Christ from Peebles Ohio (OH)
         floor 1: 
@@ -635,22 +599,41 @@ Loomis Hall
 Siebel Center
     Number of Floors: 2
     Total Capacity: 40 
-    Occupied Capacity: 40 
+    Occupied Capacity: 32 
     Gender: Male
 
 
-    Tomoka Christian Church from Ormond Beach Florida (FL)
+    Fayetteville Christian Church from Fayetteville Georgia (GA)
         floor 1: 
             1 adult rooms from 2-person rooms
-            9 2-person student rooms
-        floor 2: 
-            1 adult rooms from 2-person rooms
-            4 2-person student rooms
+            2 2-person student rooms
 
-    Hope Church from Springfield Illinois (IL)
+    Ross Christian Church from Hamilton Ohio (OH)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            3 2-person student rooms
+
+    South Lake Christian Church from Groveland Florida (FL)
+        floor 1: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    Christ's Church at Butler from Butler Indiana (IN)
+        floor 1: 
+            1 2-person student rooms
         floor 2: 
             1 adult rooms from 2-person rooms
-            4 2-person student rooms
+            1 2-person student rooms
+
+    West Springs Church from Ballwin Missouri (MO)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
+
+    Epic Missions from Vero Beach Florida (FL)
+        floor 2: 
+            1 adult rooms from 2-person rooms
+            1 2-person student rooms
 
 
 
@@ -662,13 +645,13 @@ Adventure Christian Church
     Contact Information: Donald Payne don.l.payne@gmail.com (615)414-7742
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 2: 2 adults and 4 students
+        Floor 1: 2 adults and 4 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 2 adults and 8 students
+        Floor 1: 2 adults and 6 students
 
 
 Belmont Christian Church
@@ -678,14 +661,14 @@ Belmont Christian Church
     Contact Information: Brandon Craig brandonscraig@gmail.com 540-357-0143
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 1: 0 adults and 9 students
-        Floor 2: 2 adults and 3 students
+        Floor 2: 2 adults and 12 students
 
-    Altgeld Hall
+    Henry Administration Building
         Female Dorm
-        Floor 1: 2 adults and 25 students
+        Floor 2: 0 adults and 10 students
+        Floor 3: 2 adults and 14 students
 
 
 Bloomington Christian Church
@@ -697,12 +680,11 @@ Bloomington Christian Church
 
     Wohler's Hall
         Male Dorm
-        Floor 1: 2 adults and 4 students
-        Floor 2: 2 adults and 8 students
+        Floor 1: 4 adults and 12 students
 
     Talbot Lab
         Female Dorm
-        Floor 1: 2 adults and 11 students
+        Floor 2: 2 adults and 10 students
 
 
 Bridge Christian Church
@@ -712,13 +694,14 @@ Bridge Christian Church
     Contact Information: Zach Woods zwoods75@gmail.com 618-792-2370
 
 
-    Henry Administration Building
+    Wohler's Hall
         Male Dorm
-        Floor 1: 2 adults and 5 students
+        Floor 2: 2 adults and 6 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 9 students
+        Floor 1: 2 adults and 8 students
+        Floor 2: 0 adults and 2 students
 
 
 Celebration Christian Church
@@ -728,14 +711,13 @@ Celebration Christian Church
     Contact Information: Adam McManus adam@c3suffolk.com 3023441563
 
 
-    Wohler's Hall
+    Illini Union
         Male Dorm
-        Floor 2: 2 adults and 2 students
+        Floor 1: 2 adults and 2 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 1: 0 adults and 2 students
-        Floor 2: 2 adults and 8 students
+        Floor 1: 2 adults and 8 students
 
 
 Center Point Christian Church
@@ -745,13 +727,14 @@ Center Point Christian Church
     Contact Information: Tanner Garver garvtanner@gmail.com 4173884688
 
 
-    Henry Administration Building
+    Loomis Hall
         Male Dorm
-        Floor 2: 2 adults and 7 students
+        Floor 1: 2 adults and 10 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 6 students
+        Floor 2: 2 adults and 4 students
+        Floor 3: 0 adults and 2 students
 
 
 Christ's Church at Butler
@@ -761,13 +744,14 @@ Christ's Church at Butler
     Contact Information: Jennifer Skrocki jas639@cccb.edu 317-626-3505
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 4 students
+        Floor 1: 0 adults and 2 students
+        Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 2 students
+        Floor 2: 2 adults and 2 students
 
 
 Christ's Community UMC
@@ -779,11 +763,12 @@ Christ's Community UMC
 
     Wohler's Hall
         Male Dorm
-        Floor 2: 4 adults and 6 students
+        Floor 1: 4 adults and 6 students
 
     Talbot Lab
         Female Dorm
-        Floor 1: 4 adults and 13 students
+        Floor 2: 2 adults and 5 students
+        Floor 3: 2 adults and 8 students
 
 
 Community Christian Church
@@ -793,14 +778,13 @@ Community Christian Church
     Contact Information: Kelly Scott scottsvt@gmail.com (540)239-6704
 
 
-    Loomis Hall
+    Wohler's Hall
         Male Dorm
-        Floor 1: 2 adults and 5 students
+        Floor 1: 2 adults and 3 students
 
     Talbot Lab
         Female Dorm
-        Floor 1: 2 adults and 2 students
-        Floor 2: 2 adults and 15 students
+        Floor 3: 4 adults and 17 students
 
 
 Connect Christian Church
@@ -814,9 +798,9 @@ Connect Christian Church
         Male Dorm
         Floor 2: 2 adults and 6 students
 
-    Talbot Lab
+    Altgeld Hall
         Female Dorm
-        Floor 3: 2 adults and 11 students
+        Floor 1: 2 adults and 9 students
 
 
 Connect Christian Church
@@ -826,13 +810,13 @@ Connect Christian Church
     Contact Information: Eric Pruitt epruitt@connectchristianchurch.org (704)425-4261
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 2: 4 adults and 11 students
+        Floor 2: 4 adults and 12 students
 
-    Altgeld Hall
+    Henry Administration Building
         Female Dorm
-        Floor 1: 4 adults and 20 students
+        Floor 3: 4 adults and 19 students
 
 
 Cornerstone Christian Church
@@ -842,14 +826,13 @@ Cornerstone Christian Church
     Contact Information: Joel Root joelroot76@gmail.com (386)473-8524
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 3: 2 adults and 2 students
-        Floor 4: 2 adults and 12 students
+        Floor 3: 4 adults and 12 students
 
-    Altgeld Hall
+    Talbot Lab
         Female Dorm
-        Floor 2: 4 adults and 14 students
+        Floor 1: 4 adults and 13 students
 
 
 Cornerstone Christian Church
@@ -859,13 +842,13 @@ Cornerstone Christian Church
     Contact Information: Steven Feather steven.feather@cc-church.com 4794594594
 
 
-    Henry Administration Building
+    Wohler's Hall
         Male Dorm
-        Floor 1: 4 adults and 5 students
+        Floor 2: 4 adults and 4 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 8 students
+        Floor 2: 2 adults and 8 students
 
 
 CrossView Christian Church
@@ -879,9 +862,9 @@ CrossView Christian Church
         Male Dorm
         Floor 2: 2 adults and 4 students
 
-    Talbot Lab
+    Altgeld Hall
         Female Dorm
-        Floor 3: 4 adults and 14 students
+        Floor 1: 4 adults and 12 students
 
 
 Englewood Christian Church
@@ -891,13 +874,13 @@ Englewood Christian Church
     Contact Information: Gayle Gemeinhart gayle@eccjax.com 904-955-5441
 
 
-    Henry Administration Building
+    Loomis Hall
         Male Dorm
-        Floor 2: 2 adults and 5 students
+        Floor 1: 2 adults and 5 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 8 students
+        Floor 3: 2 adults and 8 students
 
 
 Epic Missions
@@ -907,13 +890,13 @@ Epic Missions
     Contact Information: Daniel Arseneau dan.j.arseneau@gmail.com 2174335720
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 5 students
+        Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 2 students
+        Floor 2: 2 adults and 2 students
 
 
 Fayetteville Christian Church
@@ -923,13 +906,13 @@ Fayetteville Christian Church
     Contact Information: Andrew Long along@fayettevillechristian.org 8123227503
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 3 students
+        Floor 1: 2 adults and 4 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 5 students
+        Floor 1: 2 adults and 6 students
 
 
 First Christian Church
@@ -939,13 +922,13 @@ First Christian Church
     Contact Information: CJ Muston cjmuston@fccbrazil.org 812-531-9212
 
 
-    Henry Administration Building
+    Wohler's Hall
         Male Dorm
-        Floor 1: 2 adults and 5 students
+        Floor 2: 2 adults and 6 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 9 students
+        Floor 2: 2 adults and 9 students
 
 
 First Christian Church
@@ -955,13 +938,13 @@ First Christian Church
     Contact Information: Jessica Parrott jessica30parrott@yahoo.com 931-445-4887
 
 
-    Henry Administration Building
+    Loomis Hall
         Male Dorm
-        Floor 2: 2 adults and 10 students
+        Floor 1: 2 adults and 10 students
 
-    Altgeld Hall
+    Memorial Stadium
         Female Dorm
-        Floor 3: 2 adults and 4 students
+        Floor 1: 2 adults and 4 students
 
 
 First Christian Church
@@ -973,11 +956,11 @@ First Christian Church
 
     Wohler's Hall
         Male Dorm
-        Floor 2: 2 adults and 6 students
+        Floor 1: 2 adults and 6 students
 
     Talbot Lab
         Female Dorm
-        Floor 2: 2 adults and 12 students
+        Floor 3: 2 adults and 12 students
 
 
 First Christian Church
@@ -987,13 +970,13 @@ First Christian Church
     Contact Information: Lucas Smith lucassmith48@gmail.com 336-409-0774
 
 
-    Henry Administration Building
+    Loomis Hall
         Male Dorm
-        Floor 1: 2 adults and 6 students
+        Floor 1: 2 adults and 7 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 6 students
+        Floor 2: 2 adults and 6 students
 
 
 First Christian Church
@@ -1003,13 +986,13 @@ First Christian Church
     Contact Information: Matthew Steinhour msteinhour@fccmc.org 7405782121
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
         Floor 2: 2 adults and 4 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 2 adults and 8 students
+        Floor 2: 2 adults and 6 students
 
 
 First Christian Church
@@ -1023,9 +1006,9 @@ First Christian Church
         Male Dorm
         Floor 2: 2 adults and 8 students
 
-    Illini Union
+    Altgeld Hall
         Female Dorm
-        Floor 2: 2 adults and 6 students
+        Floor 1: 2 adults and 6 students
 
 
 First Christian Church - Titusville
@@ -1035,13 +1018,13 @@ First Christian Church - Titusville
     Contact Information: Mark Boggess markbogg@cfl.rr.com 321-267-4858
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 2: 2 adults and 7 students
+        Floor 1: 2 adults and 8 students
 
-    Noyes Hall
+    Henry Administration Building
         Female Dorm
-        Floor 1: 2 adults and 4 students
+        Floor 3: 2 adults and 3 students
 
 
 Gateway Christian Church
@@ -1051,13 +1034,13 @@ Gateway Christian Church
     Contact Information: JR Hengehold gccjr@att.net 9315515754
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 3: 2 adults and 8 students
+        Floor 2: 2 adults and 6 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 2 adults and 4 students
+        Floor 2: 2 adults and 2 students
 
 
 Haw Branch Church of Christ
@@ -1069,12 +1052,12 @@ Haw Branch Church of Christ
 
     Wohler's Hall
         Male Dorm
-        Floor 2: 2 adults and 8 students
+        Floor 1: 0 adults and 4 students
+        Floor 2: 2 adults and 4 students
 
     Talbot Lab
         Female Dorm
-        Floor 2: 0 adults and 4 students
-        Floor 3: 2 adults and 7 students
+        Floor 3: 2 adults and 10 students
 
 
 Highland Park Christian Church
@@ -1084,13 +1067,13 @@ Highland Park Christian Church
     Contact Information: Matt Crosser mattc@hp4christ.org 9188509828
 
 
-    Wohler's Hall
+    Noyes Hall
         Male Dorm
-        Floor 2: 4 adults and 6 students
+        Floor 3: 4 adults and 6 students
 
     Talbot Lab
         Female Dorm
-        Floor 1: 4 adults and 12 students
+        Floor 2: 4 adults and 12 students
 
 
 Hope Church
@@ -1100,14 +1083,13 @@ Hope Church
     Contact Information: Troy Easley teasley@myhope.church (573)230-6509
 
 
-    Siebel Center
+    Noyes Hall
         Male Dorm
-        Floor 2: 2 adults and 8 students
+        Floor 3: 2 adults and 8 students
 
-    Altgeld Hall
+    Talbot Lab
         Female Dorm
-        Floor 2: 2 adults and 12 students
-        Floor 3: 2 adults and 6 students
+        Floor 1: 4 adults and 17 students
 
 
 Horizon Christian Church
@@ -1117,13 +1099,13 @@ Horizon Christian Church
     Contact Information: Ethan Barbee ethan@gohorizon.org 8135052329
 
 
-    Henry Administration Building
+    Wohler's Hall
         Male Dorm
-        Floor 1: 2 adults and 8 students
+        Floor 2: 2 adults and 8 students
 
-    Talbot Lab
+    Altgeld Hall
         Female Dorm
-        Floor 3: 2 adults and 9 students
+        Floor 1: 2 adults and 8 students
 
 
 Kings Way Christian Church
@@ -1135,7 +1117,7 @@ Kings Way Christian Church
 
     Wohler's Hall
         Male Dorm
-        Floor 1: 4 adults and 13 students
+        Floor 1: 4 adults and 12 students
 
     Talbot Lab
         Female Dorm
@@ -1149,14 +1131,14 @@ Kinmundy Christian Church
     Contact Information: Josh Conley kinmundycc@gmail.com (618)780-4355
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 1: 6 adults and 12 students
+        Floor 1: 6 adults and 6 students
+        Floor 2: 0 adults and 4 students
 
-    Memorial Stadium
+    Henry Administration Building
         Female Dorm
-        Floor 1: 2 adults and 8 students
-        Floor 2: 4 adults and 14 students
+        Floor 2: 6 adults and 21 students
 
 
 Lake City Christian Church
@@ -1166,13 +1148,13 @@ Lake City Christian Church
     Contact Information: Seth Byrd sethbyrd3@gmail.com (407)873-4803
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 3: 2 adults and 3 students
+        Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 6 students
+        Floor 1: 2 adults and 6 students
 
 
 Leclaire Christian Church
@@ -1182,11 +1164,11 @@ Leclaire Christian Church
     Contact Information: John Bollinger jbollinger10@yahoo.com 314-494-0918
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 2: 4 adults and 10 students
+        Floor 1: 4 adults and 10 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
         Floor 1: 2 adults and 2 students
 
@@ -1198,13 +1180,13 @@ Lehigh Acres Christian Church
     Contact Information: Derek Tennant dtennant6@gmail.com 2394104004
 
 
-    Wohler's Hall
+    Noyes Hall
         Male Dorm
-        Floor 1: 2 adults and 14 students
+        Floor 3: 2 adults and 14 students
 
     Talbot Lab
         Female Dorm
-        Floor 1: 4 adults and 11 students
+        Floor 1: 4 adults and 10 students
 
 
 Madison Christian Church
@@ -1214,13 +1196,13 @@ Madison Christian Church
     Contact Information: Michael Seckman mseckman@madisonchristian.org 614 448 6872
 
 
-    Henry Administration Building
+    Wohler's Hall
         Male Dorm
-        Floor 1: 4 adults and 5 students
+        Floor 2: 4 adults and 6 students
 
-    Noyes Hall
+    Altgeld Hall
         Female Dorm
-        Floor 1: 2 adults and 8 students
+        Floor 2: 2 adults and 8 students
 
 
 Mid Rivers Christian Church
@@ -1230,14 +1212,13 @@ Mid Rivers Christian Church
     Contact Information: Jake McFadden jmcfadden@midriverscc.org 417-529-6514
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 2: 2 adults and 0 students
-        Floor 3: 0 adults and 3 students
+        Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 2 adults and 8 students
+        Floor 2: 2 adults and 6 students
 
 
 Milford Christian Church
@@ -1247,15 +1228,14 @@ Milford Christian Church
     Contact Information: Darrell Doss doss.darrell10@yahoo.com 417-825-2682
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 2: 0 adults and 12 students
-        Floor 3: 2 adults and 4 students
+        Floor 2: 2 adults and 12 students
+        Floor 3: 0 adults and 4 students
 
-    Altgeld Hall
+    Henry Administration Building
         Female Dorm
-        Floor 1: 0 adults and 4 students
-        Floor 2: 2 adults and 8 students
+        Floor 3: 2 adults and 12 students
 
 
 Mount Pulaski Christian Church
@@ -1265,13 +1245,13 @@ Mount Pulaski Christian Church
     Contact Information: Garrett LeVault garrett@mtpulaskicc.org 2174155677
 
 
-    Grainger Library
+    Noyes Hall
         Male Dorm
-        Floor 2: 4 adults and 14 students
-
-    Memorial Stadium
-        Female Dorm
         Floor 2: 4 adults and 16 students
+
+    Henry Administration Building
+        Female Dorm
+        Floor 3: 4 adults and 16 students
 
 
 Northeast Christian Church
@@ -1281,13 +1261,13 @@ Northeast Christian Church
     Contact Information: Lisa Davis yourfriendsinrealestate@gmail.com 302-753-8367
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 3: 2 adults and 4 students
+        Floor 2: 2 adults and 4 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 3 students
+        Floor 1: 2 adults and 3 students
 
 
 Parkview Christian Church
@@ -1297,13 +1277,13 @@ Parkview Christian Church
     Contact Information: Joel Johnson joeljohnson@woh.rr.com (606)571-7372
 
 
-    Henry Administration Building
+    Loomis Hall
         Male Dorm
-        Floor 1: 2 adults and 8 students
+        Floor 1: 2 adults and 7 students
 
-    Talbot Lab
+    Altgeld Hall
         Female Dorm
-        Floor 3: 2 adults and 6 students
+        Floor 2: 2 adults and 6 students
 
 
 Peachtree City Christian Church
@@ -1313,14 +1293,13 @@ Peachtree City Christian Church
     Contact Information: Chris Mathis chrismathis@ptc3.com 6786895995
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 3: 2 adults and 3 students
+        Floor 2: 2 adults and 4 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 2 adults and 0 students
-        Floor 3: 0 adults and 5 students
+        Floor 2: 2 adults and 4 students
 
 
 Peebles Church of Christ
@@ -1334,7 +1313,7 @@ Peebles Church of Christ
         Male Dorm
         Floor 1: 0 adults and 5 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
         Floor 1: 4 adults and 6 students
 
@@ -1346,14 +1325,14 @@ Prairie Grove Christian Church
     Contact Information: Matt Tibbit matt.tibbit@gmail.com 479-466-7787
 
 
-    Loomis Hall
+    Noyes Hall
         Male Dorm
         Floor 1: 8 adults and 40 students
 
-    Illini Union
+    Henry Administration Building
         Female Dorm
-        Floor 1: 8 adults and 32 students
-        Floor 2: 4 adults and 26 students
+        Floor 1: 12 adults and 48 students
+        Floor 2: 0 adults and 9 students
 
 
 Ross Christian Church
@@ -1363,9 +1342,9 @@ Ross Christian Church
     Contact Information: Gary Angel angel5@fuse.net (513)519-7926
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 8 students
+        Floor 1: 2 adults and 6 students
 
 
 Salty Church
@@ -1375,13 +1354,13 @@ Salty Church
     Contact Information: rick hilliard rick@salty.org 3868710656
 
 
-    Wohler's Hall
+    Noyes Hall
         Male Dorm
-        Floor 1: 4 adults and 15 students
+        Floor 3: 4 adults and 15 students
 
-    Altgeld Hall
+    Talbot Lab
         Female Dorm
-        Floor 2: 2 adults and 11 students
+        Floor 1: 2 adults and 11 students
 
 
 Seymour Heights Christian Church
@@ -1391,13 +1370,14 @@ Seymour Heights Christian Church
     Contact Information: Nick Defore nick@seymourheights.org (865)360-9551
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
-        Floor 2: 2 adults and 4 students
+        Floor 1: 2 adults and 4 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
-        Floor 2: 0 adults and 8 students
+        Floor 1: 0 adults and 2 students
+        Floor 2: 0 adults and 4 students
 
 
 South Lake Christian Church
@@ -1407,13 +1387,13 @@ South Lake Christian Church
     Contact Information: Amanda Littiken amandalittiken@gmail.com 3522673557
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 3 students
+        Floor 1: 2 adults and 2 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 0 adults and 6 students
+        Floor 1: 0 adults and 6 students
 
 
 Tomoka Christian Church
@@ -1423,14 +1403,13 @@ Tomoka Christian Church
     Contact Information: Jeremiah Bear jbear@tomoka.cc 
 
 
-    Siebel Center
+    Noyes Hall
         Male Dorm
-        Floor 1: 2 adults and 18 students
-        Floor 2: 2 adults and 8 students
-
-    Memorial Stadium
-        Female Dorm
         Floor 1: 4 adults and 26 students
+
+    Henry Administration Building
+        Female Dorm
+        Floor 2: 4 adults and 25 students
 
 
 Vale Church
@@ -1440,11 +1419,11 @@ Vale Church
     Contact Information: Jeremy Irwin jirwin@vale.church 282-421-9583
 
 
-    Henry Administration Building
+    Illini Union
         Male Dorm
         Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Memorial Stadium
         Female Dorm
         Floor 2: 2 adults and 8 students
 
@@ -1458,7 +1437,7 @@ Vero Christian Church
 
     Wohler's Hall
         Male Dorm
-        Floor 1: 4 adults and 8 students
+        Floor 1: 4 adults and 7 students
 
     Talbot Lab
         Female Dorm
@@ -1472,13 +1451,16 @@ West Springs Church
     Contact Information: Justin Brunk justin.brunk@westspringschurch.com 6363465937
 
 
-    Henry Administration Building
+    Siebel Center
         Male Dorm
-        Floor 3: 2 adults and 4 students
+        Floor 2: 2 adults and 2 students
 
-    Noyes Hall
+    Grainger Library
         Female Dorm
-        Floor 3: 2 adults and 2 students
+        Floor 2: 2 adults and 2 students
 
 
-Total Lost Capacity is: 170
+Total lost capacity is: 131
+Minimum possible lost capacity due to adults is: 57
+Acutal lost capacity due to adults is: 90
+Lost capacity due to students is: 41
