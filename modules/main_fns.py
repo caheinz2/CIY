@@ -1,6 +1,6 @@
-import peripherals.heap as heap
-import peripherals.churches as churches
-import peripherals.buildings as buildings
+import modules.peripherals.heap as heap
+import modules.peripherals.churches as churches
+import modules.peripherals.buildings as buildings
 import math
 
 

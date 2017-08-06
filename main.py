@@ -1,8 +1,8 @@
-import main_fns
-import peripherals.churches as churches
-import peripherals.buildings as buildings
-import peripherals.myio as myio
-import peripherals.heap as heap
+import modules.main_fns as main_fns
+import modules.peripherals.churches as churches
+import modules.peripherals.buildings as buildings
+import modules.peripherals.myio as myio
+import modules.peripherals.heap as heap
 
 input_list = myio.input('documentation/TN7_Test.xlsx')
 church_list = input_list[0]
