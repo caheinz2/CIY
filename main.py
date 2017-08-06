@@ -1,10 +1,12 @@
+import sys
 import modules.main_fns as main_fns
 import modules.peripherals.churches as churches
 import modules.peripherals.buildings as buildings
 import modules.peripherals.myio as myio
 import modules.peripherals.heap as heap
 
-input_list = myio.input('documentation/TN7_Test.xlsx')
+filepath = input("Enter path to input file: ")    #program will get input from here and also print output to here
+input_list = myio.input(filepath)
 church_list = input_list[0]
 building_list = input_list[1]
 building_list.sort()
@@ -14,14 +16,6 @@ church_heap.heapify(church_list)
 
 vacant_building_list = list(building_list)
 
-#for building in building_list:
-#    print(building)
-
-#for church in church_list:
-#    print(church)
-
-#print(church_heap.isEmpty())
-#print(building_heap.isEmpty())
 while not church_heap.isEmpty() and len(vacant_building_list) > 0:
     cur_church = church_heap.pop()
 
@@ -42,6 +36,18 @@ while not church_heap.isEmpty() and len(vacant_building_list) > 0:
     if cur_church.getTotal() - cur_church.getHousedTotal() > 0:
         church_heap.push(cur_church)
 
+
+#Print results to a file
+x = 0
+remove = 0
+for char in filepath:
+    x = x + 1
+    if char == "/":
+        remove = x
+filepath = filepath[:remove]
+
+sys.stdout=open(filepath+"output.txt", "w+")
+
 if len(vacant_building_list) == 0 and not church_heap.isEmpty():
     print("NOT ALL CHURCHES FIT")
 
@@ -56,10 +62,11 @@ else:
     for church in church_list:
         print(church)
         church.printBuildings()
-        print()
+        print("")
 
 
 print("Total lost capacity is: {}".format(main_fns.totalCost(church_list, building_list)))
-print("Minimum possible lost capacity due to adults is: {}".format(main_fns.minAdultCost(church_list)))
 print("Acutal lost capacity due to adults is: {}".format(main_fns.actualAdultCost(church_list, building_list)))
 print("Lost capacity due to students is: {}".format(main_fns.actualStudentCost(church_list, building_list)))
+
+sys.stdout.close()

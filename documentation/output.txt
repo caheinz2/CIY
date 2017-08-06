@@ -1461,6 +1461,5 @@ West Springs Church
 
 
 Total lost capacity is: 131
-Minimum possible lost capacity due to adults is: 57
 Acutal lost capacity due to adults is: 90
 Lost capacity due to students is: 41
